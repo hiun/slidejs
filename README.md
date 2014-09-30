@@ -36,11 +36,11 @@ Add `slidejs.js` file to your HTML file will take global function called `slidej
 </script>
 ```
 
-A function `slidejs` take single object as an argument. In this object, we can configure required and optional settings. The *Italic font is special consideration of value*
+A function `slidejs` take single object as an argument. In this object, we can configure required and optional settings. The *Italic font is special consideration of value*.
 
 - `index` (Required, Number) : Number of image to slide. *Must be start with `0`*.
 
-- `path` (Required, String) : URL of slide image. *Must be ended with `/` ( ex. ./img/slideshow/ )*.
+- `path` (Required, String) : URL of slide image. *Must be ended with `/` ( ex. `./img/slideshow/` )*.
 
 - `extension` (Optional, String) : Extension of image. Default to `.jpg`.
 
@@ -69,7 +69,7 @@ slidejs require two DOM element to present slide. **Slide you want to present fi
 
 slidejs is just starting framework for helps to make simple fade slide in web. 
 
-You may feel fade slide is really greate too to express story like [this](http://ycombinator.com).
+You may feel fade slide is really great way to express story like [this](http://ycombinator.com).
 
 Feel free to make pull request for any improvements.
 
