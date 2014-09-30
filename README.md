@@ -4,7 +4,7 @@ Simple fade slider for web.
 
 ##Demo
 
-Click [here](https://divtag.sejong.edu) to see real world example.
+Click [here](http://divtag.sejong.edu) to see real world example.
 
 ##Prerequisites
 
@@ -31,7 +31,7 @@ Add `slidejs.js` file to your HTML file will take global function called `slidej
     path: './img/slideshow/'
 
     //more configuration to go.
-    
+
   });
 </script>
 ```
