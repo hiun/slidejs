@@ -5,7 +5,10 @@ function slidejs (obj) {
 	var EXTENSION = obj.extension || '.jpg'; //image extension
 	var SLIDE0 = obj.slide0 || '#slide0'; //dom 0
 	var SLIDE1 = obj.slide1 || '#slide1'; //dom 1
+	var WIDTH = obj.width || 'auto';
+	var HEIGHT = obj.height || 'auto';
 	var TIME = obj.time || 800; //duration of slide
+	var DURATION = obj.duration || 6000
 
 	var CURRENT = 1; // current image in display.
 	var STATUS = 0; // help to determin fade or unfade.
@@ -15,26 +18,38 @@ function slidejs (obj) {
 		return PATH + CURRENT + EXTENSION;
 	}
 
-	setInterval(function () {
+	$(window).load(function () {
 
-		if (STATUS === 0) {
+		$(SLIDE0 + ',' + SLIDE1).css({
+			'position': 'absolute',
+			'width': WIDTH,
+			'height': HEIGHT
+		})
+		.parent()
+		.css({
+			'position': 'relative'
+		})
 
-			STATUS = STATUS + 1;
+		setInterval(function () {
 
-			$(SLIDE0).fadeTo(TIME, 0, function () {
-				$(this).attr('src', nextImage());	
-			});
+			if (STATUS === 0) {
 
-		} else {
+				STATUS = STATUS + 1;
 
-			STATUS = STATUS - 1;
+				$(SLIDE0).fadeTo(TIME, 0, function () {
+					$(this).attr('src', nextImage());	
+				});
 
-			$(SLIDE0).fadeTo(TIME, 1, function () {
-				$(SLIDE1).attr('src', nextImage());
-			});
+			} else {
 
-		}
+				STATUS = STATUS - 1;
 
-	}, 6000);
+				$(SLIDE0).fadeTo(TIME, 1, function () {
+					$(SLIDE1).attr('src', nextImage());
+				});
 
+			}
+
+		}, DURATION);
+	})
 }
