@@ -28,7 +28,10 @@ Add `slidejs.js` file to your HTML file will take global function called `slidej
 <script>
   slidejs({
     index: 13,
-    path: './img/slideshow/',
+    path: './img/slideshow/'
+
+    //more configuration to go.
+    
   });
 </script>
 ```
@@ -53,7 +56,7 @@ A function `slidejs` take single object as an argument. In this object, we can c
 
 - `duration` (Optional, Number) : Presenting time of slide. Default to `6000`ms.
 
-###Additional DOM Configuration. 
+###Additional DOM Configuration
 
 slidejs require two DOM element to present slide. **Slide you want to present first, have to located downside of another.** check following example.
 
