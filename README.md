@@ -17,7 +17,7 @@ Click [here](http://divtag.sejong.edu) to see real world example.
 
 Add `slidejs.js` file to your HTML file will take global function called `slidejs`.
 
-###Configuration API
+###API
 
 - Example
 
@@ -63,8 +63,8 @@ A function `slidejs` take single object as an argument. In this object, we can c
 slidejs require two DOM element to present slide. **Slide you want to present first, have to located downside of another.** check following example.
 
 ```html
-<img src="./img/slideshow/1.jpg" id="slide1">
-<img src="./img/slideshow/0.jpg" id="slide0">
+<img id="slide1">
+<img id="slide0">
 ```
 
 ##Contributing
