@@ -1,0 +1,10 @@
+#node.js modules
+node_modules/
+
+#ide files
+build/
+.idea/
+.project/
+
+#log files
+*.log

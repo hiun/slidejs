@@ -22,8 +22,8 @@ Add `slidejs.js` file to your HTML file will take global function called `slidej
 - Example
 
 ```html
-<img src="./img/slideshow/1.jpg" id="slide1">
-<img src="./img/slideshow/0.jpg" id="slide0">
+<img id="slide1">
+<img id="slide0">
 
 <script>
   slidejs({
@@ -55,6 +55,8 @@ A function `slidejs` take single object as an argument. In this object, we can c
 - `time` (Optional, Number) : Time of fading animation. Default to `600`ms.
 
 - `duration` (Optional, Number) : Presenting time of slide. Default to `6000`ms.
+
+- `reverse` (Optional, Boolean) : Reverse option of slide. If `true` slide is advancing `n` to `0`. Default to `false`.
 
 ###Additional DOM Configuration
 
